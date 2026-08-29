@@ -2,12 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
   FiLogOut,
-  FiUser,
-  FiBuilding2,
-  FiFileText,
-  FiShare2,
   FiEye,
   FiPlus,
+  FiEdit2,
 } from 'react-icons/fi';
 import toast from 'react-hot-toast';
 import { useAuth } from '../context/AuthContext';
@@ -61,7 +58,7 @@ function Dashboard() {
             {/* Logo */}
             <div className="flex items-center space-x-2">
               <div className="w-10 h-10 bg-medical-blue rounded-lg flex-center">
-                <FiFileText className="w-6 h-6 text-white" />
+                <FiEdit2 className="w-6 h-6 text-white" />
               </div>
               <h1 className="text-xl font-bold text-medical-blue">ORNGlobal</h1>
             </div>
@@ -96,7 +93,7 @@ function Dashboard() {
           <div className="card animate-slideInUp md:col-span-1">
             <div className="flex items-center space-x-4 mb-4">
               <div className="w-16 h-16 bg-medical-blue rounded-full flex-center">
-                <FiUser className="w-8 h-8 text-white" />
+                <FiEdit2 className="w-8 h-8 text-white" />
               </div>
               <div>
                 <h3 className="card-header mb-0">Your Profile</h3>
@@ -135,7 +132,7 @@ function Dashboard() {
           <div className="card animate-slideInUp md:col-span-1">
             <div className="flex items-center space-x-4 mb-4">
               <div className="w-16 h-16 bg-medical-green rounded-full flex-center">
-                <FiBuilding2 className="w-8 h-8 text-white" />
+                <FiEye className="w-8 h-8 text-white" />
               </div>
               <div>
                 <h3 className="card-header mb-0">Hospital</h3>
@@ -240,7 +237,7 @@ function Dashboard() {
               </div>
             </div>
             <button className="btn-primary w-full flex-center space-x-2">
-              <FiFileText className="w-5 h-5" />
+              <FiPlus className="w-5 h-5" />
               <span>New Case</span>
             </button>
           </div>
@@ -259,7 +256,7 @@ function Dashboard() {
               </div>
             </div>
             <button className="btn-primary w-full flex-center space-x-2">
-              <FiFileText className="w-5 h-5" />
+              <FiEye className="w-5 h-5" />
               <span>View Cases</span>
             </button>
           </div>
@@ -269,7 +266,7 @@ function Dashboard() {
         <div className="mt-8 card animate-slideInUp">
           <h3 className="card-header">Recent Activity</h3>
           <div className="text-center py-12">
-            <FiFileText className="w-12 h-12 text-gray-300 mx-auto mb-3" />
+            <FiEdit2 className="w-12 h-12 text-gray-300 mx-auto mb-3" />
             <p className="text-gray-500">No activity yet</p>
             <p className="text-sm text-gray-400 mt-1">
               Start creating surgical cases to see activity here
